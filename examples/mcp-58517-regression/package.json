@@ -1,0 +1,22 @@
+{
+  "name": "mcp-58517-regression",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Black-box regression harness for anthropics/claude-code#58517 (SSE relative endpoint URL; type:http / Accept-header handling). No Claude Code source required.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test test/sdk-conformance.test.ts",
+    "test:claude": "node test/run-claude-tests.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
